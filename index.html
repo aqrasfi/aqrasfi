@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aqrasfi | Luxury Jewelry</title>
+  <meta
+    name="description"
+    content="Aqrasfi luxury jewelry — bold, elegant, modern pieces designed to stand out."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text">AQRASFI</span>
+      </a>
+
+      <nav class="nav" id="navMenu">
+        <a href="#collections">Collections</a>
+        <a href="products.html">Catalog</a>
+        <a href="#story">Story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="wishlist-btn" id="wishlistBtn" aria-label="Wishlist">
+          ❤ <span id="wishlistCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+   <!--Hero section-->
+
+       <section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Luxury Jewelry • Modern Drama</p>
+      <h1>
+        Jewelry that feels
+        <span class="gradient-text">rare, bold, unforgettable.</span>
+      </h1>
+      <p class="hero-text">
+        Aqrasfi is crafted for statement moments — luminous details,
+        premium styling, and a brand presence that feels rich and iconic.
+      </p>
+
+      <div class="hero-actions">
+        <a href="products.html" class="btn btn-primary">Shop the vibe</a>
+        <a href="#story" class="btn btn-secondary">Our story</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal delay-1">
+      <div class="hero-ring ring-a"></div>
+      <div class="hero-image-main glass floating">
+        <img src="https://i.postimg.cc/QNSWYHYr/Whats-App-Image-2026-02-15-at-7-45-46-PM.jpg" alt="Aqrasfi featured jewelry" />
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="collections section" id="collections">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Curated highlights</p>
+          <h2>Collections that feel editorial and expensive</h2>
+        </div>
+
+        <div class="collection-grid">
+          <article class="collection-card large glass reveal" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.postimg.cc/m2JkKMQV/Whats-App-Image-2026-02-15-at-7-47-51-PM-(1).jpg'); background-size: cover; background-position: center;">
+            <div class="collection-content">
+              <p class="tag">01 • Signature</p>
+              <h3>Golden Eclipse</h3>
+              <p>
+            Warm metallic glow, sculpted silhouettes, and statement energy.
+              </p>
+            </div>
+          </article>
+
+          <article class="collection-card large glass reveal delay-1" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.postimg.cc/65gqFRdY/Whats-App-Image-2026-02-15-at-7-47-51-PM.jpg'); background-size: cover; background-position: center;">
+            <div class="collection-content">
+              <p class="tag">02 • Pearls</p>
+              <h3>Moon Pearl</h3>
+              <p>Soft luxury with a modern romantic finish.</p>
+            </div>
+          </article>
+
+          <article class="collection-card large glass reveal delay-2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.postimg.cc/RVyh2fc1/Whats-App-Image-2026-02-15-at-7-47-50-PM.jpg'); background-size: cover; background-position: center;">
+            <div class="collection-content">
+              <p class="tag">03 • Crystal</p>
+              <h3>Starlight Spark</h3>
+              <p>Bright reflections, dramatic shine, unforgettable detail.</p>
+            </div>
+          </article>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog section" id="catalog">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Flexible product system</p>
+          <h2>Your catalog — easy to update anytime</h2>
+          <p class="section-subtext">
+            Add product name, image, category, price, badge and description later
+            from one simple list in the JavaScript file.
+          </p>
+        </div>
+
+        <div class="catalog-top glass reveal">
+          <div class="filters" id="filterButtons"></div>
+
+          <div class="search-wrap">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search jewelry..."
+              aria-label="Search products"
+            />
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="container story-grid">
+        <div class="story-copy reveal">
+          <p class="eyebrow">Brand story</p>
+          <h2>Aqrasfi is not basic jewelry. It is presence.</h2>
+          <p>
+            This design direction focuses on luxury mood, elegant typography,
+            layered effects, and a premium brand feel that stands out fast.
+          </p>
+          <p>
+            The layout is also practical: you can keep launching new products
+            without rebuilding the whole website every time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div class="container">
+        <div class="cta-box glass reveal">
+          <p class="eyebrow">Aqrasfi</p>
+          <h2>Made to feel high-end, dramatic, and memorable.</h2>
+          <a href="products.html" class="btn btn-primary">Explore catalog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-wrap">
+      <div>
+        <h3>AQRASFI</h3>
+        <p>Luxury jewelry with bold presence.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#collections">Collections</a>
+        <a href="products.html">Catalog</a>
+        <a href="#story">Story</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-card glass">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+
+      <div class="modal-media" id="modalImageWrap"></div>
+
+      <div class="modal-content">
+        <p class="modal-category" id="modalCategory"></p>
+        <h3 id="modalTitle"></h3>
+        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-description" id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
